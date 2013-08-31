@@ -13,3 +13,12 @@ This application computes the answers to some of the (overwhelmingly many) probl
 
 ## SYNOPSIS ##
 solve [PROBLEM_NUMBER]
+
+## COMPILE ##
+Packages needed:
+
+ - scons
+    
+To compile, run:
+
+    $ scons
