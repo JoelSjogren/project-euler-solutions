@@ -1,13 +1,13 @@
 /**********************************
-*  solution_10.cpp                *
+*  solution_0010.cpp              *
 **********************************/
-#include "solution_10.h"
+#include "solution_0010.h"
 #include <cmath>
 #include <iostream>
 using std::cout;
 using std::endl;
-Solution10 s10;
-Solution10::Solution10() : Solution(10, this) {};
+Solution0010 s0010;
+Solution0010::Solution0010() : Solution(10, this) {};
 /*
 bool isPrime(answer_t n) {
     if (n < 2) return false;
@@ -26,7 +26,7 @@ answer_t Solution10::get_answer() {
     return answer;
 }
 */
-answer_t Solution10::get_answer() {
+answer_t Solution0010::get_answer() {
     const answer_t max = 2000000;
     bool is_prime[max];
     is_prime[0] = false;

@@ -1,10 +1,10 @@
 /**********************************
-*  solution_4.cpp                 *
+*  solution_0004.cpp              *
 **********************************/
-#include "solution_4.h"
+#include "solution_0004.h"
 #include <cassert>
-Solution4 s4;
-Solution4::Solution4() : Solution(4, this) {};
+Solution0004 s0004;
+Solution0004::Solution0004() : Solution(4, this) {};
 int get_digit(answer_t number, int index) {
     answer_t focus = 1;
     for (int i = 0; i < index; i++) focus *= 10;
@@ -25,7 +25,7 @@ bool is_palindrome(answer_t number) {
             return false;
     return true;
 }
-answer_t Solution4::get_answer() {
+answer_t Solution0004::get_answer() {
     answer_t answer = 0;
     const int min = 100, max = 1000;
     for (int i = min; i < max; i++) {

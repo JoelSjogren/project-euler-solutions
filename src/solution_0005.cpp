@@ -1,10 +1,10 @@
 /**********************************
-*  solution_5.cpp                 *
+*  solution_0005.cpp              *
 **********************************/
-#include "solution_5.h"
+#include "solution_0005.h"
 #include <cassert>
-Solution5 s5;
-Solution5::Solution5() : Solution(5, this) {};
+Solution0005 s0005;
+Solution0005::Solution0005() : Solution(5, this) {};
 namespace {
     bool is_prime(int pp) {
         if (pp < 2) return false;
@@ -24,7 +24,7 @@ namespace {
     }
     int max(int a, int b) { return a > b ? a : b; }
 }
-answer_t Solution5::get_answer() {
+answer_t Solution0005::get_answer() {
     const int primes[] = { 2, 3, 5, 7, 11, 13, 17, 19, };
     const int primec = sizeof primes / sizeof *primes;
     int factor_count[primec] = { 0 };

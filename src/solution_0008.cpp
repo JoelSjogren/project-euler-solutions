@@ -1,12 +1,12 @@
 /**********************************
-*  solution_8.cpp                 *
+*  solution_0008.cpp              *
 **********************************/
-#include "solution_8.h"
+#include "solution_0008.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-Solution8 s8;
-Solution8::Solution8() : Solution(8, this) {};
+Solution0008 s0008;
+Solution0008::Solution0008() : Solution(8, this) {};
 const char digits[] =
     "73167176531330624919225119674426574742355349194934"
     "96983520312774506326239578318016984801869478851843"
@@ -29,7 +29,7 @@ const char digits[] =
     "05886116467109405077541002256983155200055935729725"
     "71636269561882670428252483600823257530420752963450";
 const int digitc = sizeof digits / sizeof *digits;
-answer_t Solution8::get_answer() {
+answer_t Solution0008::get_answer() {
     answer_t answer = 0;
     for (int i = 0; i < digitc - 4; i++) {
         unsigned prod = 1;

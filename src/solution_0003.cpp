@@ -1,13 +1,13 @@
 /**********************************
-*  solution_3.cpp                 *
+*  solution_0003.cpp              *
 **********************************/
-#include "solution_3.h"
+#include "solution_0003.h"
 #include <iostream>
 using std::cout;
 using std::endl;
-Solution3 s3;
-Solution3::Solution3() : Solution(3, this) {};
-answer_t Solution3::get_answer() {
+Solution0003 s0003;
+Solution0003::Solution0003() : Solution(3, this) {};
+answer_t Solution0003::get_answer() {
     typedef unsigned long long mytype;
     mytype composed = 600851475143;
     for (mytype i = 2; i < composed; i++)

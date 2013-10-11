@@ -1,13 +1,13 @@
 /**********************************
-*  solution_7.cpp                 *
+*  solution_0007.cpp              *
 **********************************/
-#include "solution_7.h"
+#include "solution_0007.h"
 #include <cmath>
 #include <iostream>
 using std::cout;
 using std::endl;
-Solution7 s7;
-Solution7::Solution7() : Solution(7, this) {};
+Solution0007 s0007;
+Solution0007::Solution0007() : Solution(7, this) {};
 namespace {
     bool is_prime(int pp) {
         if (pp < 2) return false;
@@ -18,7 +18,7 @@ namespace {
         return true;
     }
 }
-answer_t Solution7::get_answer() {
+answer_t Solution0007::get_answer() {
     const int primec = 10001;
     answer_t answer = 0;
     int primei = 0;

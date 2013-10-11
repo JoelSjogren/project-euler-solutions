@@ -1,9 +1,9 @@
 /**********************************
-*  solution_2.cpp                 *
+*  solution_0002.cpp              *
 **********************************/
-#include "solution_2.h"
-Solution2 s2;
-Solution2::Solution2() : Solution(2, this) {};
+#include "solution_0002.h"
+Solution0002 s0002;
+Solution0002::Solution0002() : Solution(2, this) {};
 class FibGen {
     int a, b;
 public:
@@ -16,7 +16,7 @@ public:
         return result;
     }
 };
-answer_t Solution2::get_answer() {
+answer_t Solution0002::get_answer() {
     answer_t answer = 0;
     int term;
     FibGen gen;

@@ -1,11 +1,11 @@
 /**********************************
-*  solution_4.h                   *
+*  solution_0007.h                *
 **********************************/
 #pragma once
 #include "solution.h"
-class Solution4 : public Solution {
+class Solution0007 : public Solution {
 protected:
     virtual answer_t get_answer();
 public:
-    Solution4();
+    Solution0007();
 };
