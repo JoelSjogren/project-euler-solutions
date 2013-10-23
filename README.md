@@ -18,6 +18,7 @@ solve [PROBLEM_NUMBER]
 Packages needed:
 
  - scons
+ - libgmp-dev
     
 To compile, run:
 

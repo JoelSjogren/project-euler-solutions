@@ -6,7 +6,7 @@
 ### what to link ###
 env = Environment()
 link = env.Object(['solution.cpp'] + Glob('solution_*.cpp'))
-env['LIBS'] = []
+env['LIBS'] = ['gmp']
 env['CXXFLAGS'] = ['-Wall']
 ### build ###
 solve = env.Program('../solve', ['solve.cpp'] + link)
