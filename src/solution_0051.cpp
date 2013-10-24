@@ -2,6 +2,7 @@
 *  solution_0051.cpp              *
 **********************************/
 #include "solution_0051.h"
+#include "is_prime.h"
 #include <cmath>
 #include <iostream>
 #include <iomanip>
@@ -12,15 +13,6 @@ using std::setw;
 using std::flush;
 Solution0051 s0051;
 Solution0051::Solution0051() : Solution(51, this) {};
-bool is_prime(answer_t n) {
-    if (n < 2) return false;
-    if (n == 2 or n == 3) return true;
-    answer_t max = sqrt(n);
-    for (answer_t i = 2; i <= max; i++)
-        if (n % i == 0)
-            return false;
-    return true;
-}
 void print_array(int* i, int n) {
     if (n == 0) cout << "[]";
     cout << "[" << i[0];
