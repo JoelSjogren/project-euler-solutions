@@ -65,21 +65,6 @@ int phi(int n) {
 	return static_cast<int>(result);
 }
 answer_t Solution0072::get_answer() {
-/*    answer_t count = 0;
-    const int max = 1000 * 10;
-    for (int d = 1; d <= max; d++) {
-    	for (int n = 1; n < d; n++) {
-    		if (gcd(n, d) == 1) count++;
-    	}
-    }
-    return count;*/
-/*    for (int f = 1; f < 10; f++) {
-    	cout << "f: " << f << endl;
-		list_t l = factorize(f);
-		for (size_t i = 0; i < l.size(); i++) {
-			cout << "  " << l[i] << endl;
-		}
-	}*/
 	answer_t count = 0;
     const int max = 1000 * 1000;
     for (int d = 2; d <= max; d++) {
