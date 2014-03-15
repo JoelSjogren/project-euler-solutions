@@ -37,6 +37,12 @@ answer_t Solution0073::get_answer() {
 	const Fraction third(1, 3);
 	const Fraction half(1, 2);
 	const int maxD = 12 * 1000;
+	/*
+	Because we look all the way from d = 1, the algorithm below could
+	be improved by looking for numbers n, d such that gcd(n, d) = 1
+	instead of looking in a set of used numbers.
+	
+	*/
 	for (int d = 1; d <= maxD; d++) {
 		int minN = d / 3; // max n given that n/d <= 1/3
 		int maxN = d / 2; // max n given that n/d <= 1/2

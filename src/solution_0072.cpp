@@ -22,7 +22,7 @@ int gcd(int a, int b) {
 	// base case
 	assert(b != 0);
 	if (a == 0) return b;
-	// recursive step. this could be optimized
+	// recursive step. this could be optimized by using b %= a instead.
 	while (a <= b) b -= a;
 	return gcd(b, a);
 }
