@@ -3,7 +3,8 @@
 **********************************/
 #include "solution_0071.h"
 #include <iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 Solution0071 s0071;
 Solution0071::Solution0071() : Solution(71, this) {};
 answer_t Solution0071::get_answer() {
