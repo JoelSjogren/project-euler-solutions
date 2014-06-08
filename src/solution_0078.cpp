@@ -6,12 +6,9 @@ Because order doesn't matter, the partitions can be represented as maps M: int -
 */
 #include "solution_0078.h"
 #include <cassert>
-#include <iostream>
 #include <vector>
 Solution0078 s0078;
 Solution0078::Solution0078() : Solution(78, this) {};
-using std::cout;
-using std::endl;
 using std::vector;
 answer_t Solution0078::get_answer() {
 	for (int max = 1; true; max *= 2) { // 0 <= n < max, 1 <= m < max
@@ -41,7 +38,6 @@ answer_t Solution0078::get_answer() {
 			}
 		}
 	}
-	return 0;
 }
 /* Third attempt uses too much memory (n^2). I'll keep it as a lesson.
 answer_t Solution0078::get_answer() {
