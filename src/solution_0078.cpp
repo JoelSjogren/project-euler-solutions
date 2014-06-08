@@ -2,7 +2,7 @@
 *  solution_0078.cpp              *
 **********************************/
 /*
-Because order doesn't matter, the partitions can be represented as maps M: int -> int. M(i) designates the number of groups of length i in the partition. sum(i * M(i)) = n is the total number of coins. That makes the problem a matter of counting all M for n = 1, 2, 3, ... until the number of M's, p(n), is divisible by 1,000,000. Define a new version of p, with an extra parameter m designating the least allowed length of a group in the partition. p(n, m) = p(n, m+1) + p(n-m, m).
+Because order doesn't matter, the partitions can be represented as maps M: int -> int. M(i) designates the number of groups of length i in the partition. sum(i * M(i)) = n is the total number of coins. That makes the problem a matter of counting all M for n = 1, 2, 3, ... until the number of M's, p(n), is divisible by 1,000,000. Define a new version of p, with an extra parameter m designating the least allowed length of any group in the partition. p(n, m) = p(n, m+1) + p(n-m, m).
 */
 #include "solution_0078.h"
 #include <cassert>
